@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favIcon -->
+    <link
+      rel="shortcut icon"
+      href="./assetes/Screenshot 2024-10-28 at 19.35.43.png"
+      type="image/x-icon"
+    />
+    <title>OpenEDU</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontAwsome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="sticky z-20 top-0">
+      <!-- nav container -->
+      <div class="backdrop-blur-md bg-gray-900 bg-opacity-70 sticky top-0 z-20">
+        <!-- main Nav -->
+        <nav class="max-w-7xl mx-auto p-5 flex justify-between items-center">
+          <!-- image div -->
+          <div>
+            <img
+              class="h-14 w-fit"
+              src="./assetes/Screenshot 2024-10-28 at 19.35.43.png"
+              alt=""
+            />
+          </div>
+          <!-- button div -->
+          <div>
+            <button class="btn">Home</button>
+            <button class="btn">About</button>
+            <button class="btn">Contact</button>
+          </div>
+          <!-- logIn button div -->
+          <div>
+            <button
+              class="btn bg-gray-900 border-none text-white font-bold text-xl"
+            >
+              login
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="bg-gray-900">
+      <!-- Banner Container Div -->
+      <section>
+        <!-- banner Content div -->
+        <div
+          class="max-w-7xl mx-auto rounded-lg overflow-hidden bg-[url('./assetes/Banner.jpg')] bg-cover bg-center h-96 relative"
+        >
+          <!-- Button -->
+          <button
+            class="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-gray-900 border-none rounded-xl p-4 text-white font-bold text-xl transition-all duration-300 hover:shadow-lg hover:shadow-green-500"
+          >
+            Donate Now
+          </button>
+        </div>
+      </section>
+      <!-- How we Help section Start -->
+      <section>
+        <div class="text-center text-white">
+          <h1 class="text-3xl mt-10 font-semibold mb-5">HOW WE HELP</h1>
+          <div
+            class="flex gap-3 justify-between items-center max-w-7xl mx-auto"
+          >
+            <!-- Pure Food & Water Section -->
+            <div
+              class="bg-black bg-opacity-75 p-8 flex flex-col items-center text-center justify-center w-64 h-64 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-green-500"
+            >
+              <div class="text-5xl text-green-500">🍖</div>
+              <h2 class="text-xl font-bold text-green-500">
+                Pure Food & Water
+              </h2>
+              <p>
+                We supply needy children with basic necessities like pure food
+                and water.
+              </p>
+            </div>
+            <!-- Health and Medicine Section -->
+            <div
+              class="bg-black bg-opacity-75 p-8 flex flex-col items-center text-center justify-center w-64 h-64 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-green-500"
+            >
+              <div class="text-5xl text-green-500">💊</div>
+              <h2 class="text-xl font-bold text-green-500">
+                Health and Medicine
+              </h2>
+              <p>
+                Health being the foremost priority, we aim at giving children
+                every medical support.
+              </p>
+            </div>
+            <!-- Education Section -->
+            <div
+              class="bg-black bg-opacity-75 p-8 flex flex-col items-center text-center justify-center w-64 h-64 rounded-full transition-all duration-300 hover:shadow-lg hover:shadow-green-500"
+            >
+              <div class="text-5xl text-green-500">📖</div>
+              <h2 class="text-xl font-bold text-green-500">Education</h2>
+              <p>
+                We provide education facilities to children all over the world.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Round demo Image  -->
+        <div class="max-w-7xl mx-auto mt-5">
+          <img
+            class="rounded-xl"
+            src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt=""
+          />
+        </div>
+      </section>
+    </main>
+    <footer class="bg-gray-800 text-white py-5">
+      <div class="max-w-7xl mx-auto text-center">
+        <p class="text-lg font-bold mb-2">Empowering Future Generations</p>
+        <p class="text-sm">
+          Join us in making quality education accessible to every child.
+          Together, we can change lives!
+        </p>
+        <div class="mt-4">
+          <a href="#" class="text-green-500 hover:underline">Get Involved</a> |
+          <a href="#" class="text-green-500 hover:underline">Contact Us</a>
+        </div>
+        <hr />
+        <p class="mt-4 text-xs">© 2024 OpenEDU. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
