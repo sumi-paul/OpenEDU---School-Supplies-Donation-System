@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favIcon -->
+    <link
+      rel="shortcut icon"
+      href="./assetes/Screenshot 2024-10-28 at 19.35.43.png"
+      type="image/x-icon"
+    />
+    <title>OpenEDU</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- fontAwsome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="sticky z-20 top-0">
+      <!-- nav container -->
+      <div class="backdrop-blur-md bg-gray-900 bg-opacity-70 sticky top-0 z-20">
+        <!-- main Nav -->
+        <nav class="max-w-7xl mx-auto p-5 flex justify-between items-center">
+          <!-- image div -->
+          <div>
+            <img
+              class="h-14 w-fit"
+              src="./assetes/Screenshot 2024-10-28 at 19.35.43.png"
+              alt=""
+            />
+          </div>
+          <!-- button div -->
+          <div>
+            <button class="btn">Home</button>
+            <button class="btn">About</button>
+            <button class="btn">Contact</button>
+          </div>
+          <!-- logIn button div -->
+          <div>
+            <button
+              id="btn-logout"
+              class="btn bg-gray-500 border-none text-white font-bold text-xl"
+            >
+              logout
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- main -->
+    <main class="bg-gray-900 text-white py-10">
+      <!-- Hero Section -->
+      <section class="max-w-7xl mx-auto text-center p-8">
+        <h1 class="text-4xl font-bold mb-4 text-green-400">
+          Make a Difference
+        </h1>
+        <p class="text-lg mb-8">
+          Your donation can change lives and create a brighter future. Join us
+          in our mission to provide education to every child.
+        </p>
+        <button class="btn btn-primary text-lg px-8 py-3">Donate Now</button>
+      </section>
+
+      <!-- Impact Stats -->
+      <section
+        class="max-w-5xl mx-auto mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 text-center"
+      >
+        <div
+          class="p-6 bg-gray-800 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+        >
+          <h2 class="text-3xl font-bold text-green-400">100+</h2>
+          <p>Schools Supported</p>
+        </div>
+        <div
+          class="p-6 bg-gray-800 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+        >
+          <h2 class="text-3xl font-bold text-green-400">5000+</h2>
+          <p>Students Benefited</p>
+        </div>
+        <div
+          class="p-6 bg-gray-800 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+        >
+          <h2 class="text-3xl font-bold text-green-400">$200K+</h2>
+          <p>Funds Raised</p>
+        </div>
+      </section>
+
+      <!-- Donation Form Section -->
+      <section
+        class="max-w-lg mx-auto mt-16 p-8 bg-gray-800 rounded-lg shadow-lg"
+      >
+        <h2 class="text-2xl font-bold text-center mb-4 text-green-400">
+          Donate Today
+        </h2>
+        <p class="text-center mb-8">
+          Every contribution counts, no matter the size.
+        </p>
+        <form class="space-y-6">
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text text-white">Full Name</span>
+            </label>
+            <input
+              type="text"
+              placeholder="John Doe"
+              class="input input-bordered w-full bg-gray-700 text-white"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text text-white">Email Address</span>
+            </label>
+            <input
+              type="email"
+              placeholder="email@example.com"
+              class="input input-bordered w-full bg-gray-700 text-white"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label class="label">
+              <span class="label-text text-white">Donation Amount</span>
+            </label>
+            <input
+              type="number"
+              placeholder="Enter amount"
+              class="input input-bordered w-full bg-gray-700 text-white"
+              required
+            />
+          </div>
+          <div class="form-control mt-6">
+            <button class="btn btn-primary w-full text-lg">Donate Now</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="max-w-5xl mx-auto mt-20">
+        <h2 class="text-3xl font-bold text-center text-green-400 mb-12">
+          Hear From Our Donors
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="p-6 bg-gray-800 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+          >
+            <p class="italic">
+              "Supporting this cause has been life-changing. Knowing my donation
+              helps children learn is rewarding."
+            </p>
+            <p class="mt-4 text-green-400 font-bold">- Sarah T.</p>
+          </div>
+          <div
+            class="p-6 bg-gray-800 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+          >
+            <p class="italic">
+              "Every little bit counts. I am grateful to contribute to such an
+              impactful mission."
+            </p>
+            <p class="mt-4 text-green-400 font-bold">- Mike D.</p>
+          </div>
+          <div
+            class="p-6 bg-gray-800 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+          >
+            <p class="italic">
+              "Education opens doors, and this organization is making it
+              possible for more kids to succeed."
+            </p>
+            <p class="mt-4 text-green-400 font-bold">- Jennifer L.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer START -->
+    <footer class="bg-gray-800 text-white py-5">
+      <div class="max-w-7xl mx-auto text-center">
+        <p class="text-lg font-bold mb-2">Empowering Future Generations</p>
+        <p class="text-sm">
+          Join us in making quality education accessible to every child.
+          Together, we can change lives!
+        </p>
+        <div class="mt-4">
+          <a href="#" class="text-green-500 hover:underline">Get Involved</a> |
+          <a href="#" class="text-green-500 hover:underline">Contact Us</a>
+        </div>
+        <div class="flex justify-center gap-5 items-center m-5 text-2xl">
+          <i
+            class="fa-brands fa-facebook transition-all duration-300 hover:shadow-lg hover:shadow-green-500"
+          ></i>
+          <i
+            class="fa-brands fa-square-instagram transition-all duration-300 hover:shadow-lg hover:shadow-green-500"
+          ></i>
+          <i
+            class="fa-brands fa-x-twitter transition-all duration-300 hover:shadow-lg hover:shadow-green-500"
+          ></i>
+          <i
+            class="fa-brands fa-youtube transition-all duration-300 hover:shadow-lg hover:shadow-green-500"
+          ></i>
+        </div>
+        <hr />
+        <p class="mt-4 text-xs">© 2024 OpenEDU. All rights reserved.</p>
+      </div>
+    </footer>
+    <!-- js Scripts -->
+    <script src="./js files/logout.js"></script>
+  </body>
+</html>
